@@ -20,7 +20,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         <a routerLink="/skills" (click)="closeMenu()">Habilidades</a>
         <a routerLink="/personal" (click)="closeMenu()">Información Personal</a>
       </div>
-      <img src="assets/images/perfil.jpg" alt="Mi foto" class="profile-photo"/></nav>
+      <img src="{{'assets/images/perfil.jpg'}}" alt="Mi foto" class="profile-photo"></nav>
     
     <router-outlet></router-outlet>
   `,
