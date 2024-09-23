@@ -1,0 +1,55 @@
+/*Foto*/
+.profile-photo {
+  width: 150px; /* Ajusta el tamaño según lo necesites */
+  border-radius: 50%; /* Para hacerla circular */
+  margin: 10px 0; /* Espaciado superior e inferior */
+}
+/* Estilos básicos de la navegación */
+.navbar {
+    background-color: #343a40;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .navbar-toggler {
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Ocultar en pantallas grandes */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 18px;
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block; /* Mostrar el botón de hamburguesa en pantallas pequeñas */
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      background-color: #343a40;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      left: 0;
+    }
+  
+    .navbar-menu.open {
+      display: block; /* Mostrar el menú cuando esté abierto */
+    }
+  }
+  
